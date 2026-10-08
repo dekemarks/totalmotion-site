@@ -6,31 +6,96 @@
   <title>TotalMotion — Support</title>
   <style>
     body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-           max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1c1c1e; }
-    h1 { font-size: 28px; }
+           max-width: 760px; margin: 40px auto; padding: 0 20px; color: #1c1c1e; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 20px; margin-top: 1.8em; }
+    h3 { font-size: 17px; margin-top: 1.4em; margin-bottom: .2em; }
+    p { margin: .3em 0 .8em; }
     a { color: #0a7cff; }
+    .muted { color: #6b6b70; }
   </style>
 </head>
 <body>
   <h1>TotalMotion Support</h1>
   <p>TotalMotion aggregates and summarizes the workouts already in Apple Health —
-  with goals, charts, insights, and more.</p>
+  with goals, charts, insights, sleep, and more. It's <strong>read-only</strong>:
+  it never changes your Health data.</p>
 
-  <h2>Get help</h2>
-  <p>Questions, bugs, or feature requests? Email
-  <a href="mailto:dekemarks@gmail.com">dekemarks@gmail.com</a>
-  and we&rsquo;ll get back to you.</p>
+  <h2>Contact</h2>
+  <p>Questions, bugs, or ideas? Email
+  <a href="mailto:dekemarks@gmail.com">dekemarks@gmail.com</a> and I'll get back to you.</p>
 
-  <h2>Common questions</h2>
-  <p><strong>Why don&rsquo;t I see my activities?</strong> Make sure you allowed
-  TotalMotion to read your health data (Settings &rsaquo; Privacy &amp; Security &rsaquo;
-  Health), and that your activities have synced to Apple Health.</p>
+  <h2>Frequently asked questions</h2>
 
-  <p><strong>Does TotalMotion change my Health data?</strong> No — it&rsquo;s
-  read-only and never writes to Apple Health.</p>
+  <h3>Why don't I see my activities?</h3>
+  <p>Make sure you allowed TotalMotion to read your health data: iPhone
+  <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Health &rsaquo; TotalMotion</em>, and
+  turn on the categories. Also confirm your workouts have synced into Apple Health.
+  Pull down on the Activities list to refresh.</p>
 
-  <p><strong>How does the purchase work?</strong> The app is free for 7 days, then a
-  one-time purchase unlocks it on all your devices. Use &ldquo;Restore Purchase&rdquo;
-  if you&rsquo;ve bought it before.</p>
+  <h3>Why do my iPhone and iPad show different activities?</h3>
+  <p>Each device reads from <em>its own</em> copy of Apple Health, and Apple syncs
+  Health data between devices over iCloud — which can lag from minutes to hours.
+  If a workout is on your iPhone but not yet your iPad, the iPad is simply waiting
+  on Apple's Health sync (make sure <em>Settings &rsaquo; [your name] &rsaquo; iCloud &rsaquo; Health</em>
+  is on for both). Once it arrives, reopen TotalMotion to see it.</p>
+
+  <h3>The same workout was recorded by my Apple Watch and my Oura ring — will it show twice?</h3>
+  <p>No. When two sources record the same session, TotalMotion merges them into one
+  (preferring the richest/primary source) so your totals aren't doubled. You can turn
+  this off with <em>Settings &rsaquo; Merge Duplicates</em>, and you can manually hide or
+  un-hide any activity.</p>
+
+  <h3>Why don't the numbers exactly match Apple Health or Oura?</h3>
+  <p>A few honest reasons: TotalMotion's "Today" distance, steps, calories, and flights
+  are <em>all-day</em> totals (everyday movement, what Apple Fitness shows), while an
+  individual activity shows just that workout. Different devices also measure slightly
+  differently. For sleep, when more than one device logs the same night, TotalMotion
+  uses the single source that recorded the most sleep and counts overlapping time once —
+  so it should closely match the Health app's merged number.</p>
+
+  <h3>How does the sleep breakdown work?</h3>
+  <p>Open <em>Insights &rsaquo; Sleep</em> and tap in for the detail: a per-night hypnogram
+  (Awake / REM / Core / Deep) you can swipe between nights, and a weekly time-of-day view.
+  Stages come straight from Apple Health; a source that only reports generic "asleep"
+  time is shown as Core.</p>
+
+  <h3>What counts as a "flight" of stairs?</h3>
+  <p>Your iPhone/Apple Watch barometer counts roughly every 10 feet (~3 m) of elevation
+  gained on foot as one flight — the same metric Apple Health uses. Walking uphill can
+  add flights too.</p>
+
+  <h3>In the Custom Chart, why can the second (overlay) series only be a line or area, not bars?</h3>
+  <p>The primary series is usually bars; two bar series on the same plot sit in the same
+  spots and hide each other. So the overlay is a line or area (the classic "bars + line"
+  combo). The second series is drawn on a right-hand axis scaled to its own range.</p>
+
+  <h3>How do goals and streaks work?</h3>
+  <p>Set recurring goals in <em>Settings &rsaquo; Goals</em> (distance, duration, calories,
+  steps, flights, activities). The Today rings show your progress. Your <em>Goal Streak</em>
+  counts consecutive days you met all your goals — and past days lock in, so changing a
+  goal later never rewrites history.</p>
+
+  <h3>Can I export my data?</h3>
+  <p>Yes. Export a single activity as <strong>GPX</strong> (with route + heart rate) from its
+  detail screen, or export your whole activity list as <strong>CSV</strong> from the Activities
+  tab. You can also share an activity as an image card.</p>
+
+  <h3>How do the widgets work?</h3>
+  <p>Add the <strong>Home Screen</strong> or <strong>Lock Screen</strong> widget to see your
+  daily goal rings at a glance. Choose which goals appear on the Lock Screen in
+  <em>Settings &rsaquo; Goals</em>.</p>
+
+  <h3>How does pricing work? What about my other devices?</h3>
+  <p>TotalMotion is free for a 7-day trial, then a single <strong>one-time purchase</strong>
+  unlocks it forever — no subscription. It unlocks on all your devices signed in to the
+  same Apple Account; tap <strong>Restore Purchase</strong> on another device if needed.</p>
+
+  <h3>Is my data private?</h3>
+  <p>Yes. TotalMotion is read-only and never writes to Apple Health. Your data stays on
+  your device and your own private iCloud — it's never sent to the developer. See the
+  <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <p class="muted">TotalMotion is not affiliated with Apple or Oura.</p>
 </body>
 </html>
